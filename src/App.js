@@ -10,7 +10,6 @@ function App() {
   const [grossPrice, setGrossPrice] = useState(0.0);
   const [vatToPay, setVatToPay] = useState(0.0);
   const [vatRate, setVatRate] = useState(20.0);
-  const hostname = window.location.hostname;
 
   const handleNetPriceChange = (price) => {
     const gross_price = (price * ((vatRate / 100) + 1)).toFixed(2);
