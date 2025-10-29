@@ -12,22 +12,14 @@
   font-weight: 700;
   margin-top: 32px;
   color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
+
 .field{
   width: 300px;
   padding-bottom: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.colour-border{
-  border: 3px solid navy;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.header{
-  padding: 10px;
   align-items: center;
   justify-content: center;
 }
