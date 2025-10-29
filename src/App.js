@@ -45,9 +45,6 @@ function App() {
         <DisplayBlock customstyle="field" label="VAT to pay: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="Price incl VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
-      <div className='hostname'>
-        Hostname {hostname}
-      </div>
     </div>
   );
 }

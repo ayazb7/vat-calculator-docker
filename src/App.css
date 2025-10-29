@@ -1,27 +1,38 @@
+.colour-border {
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  border-radius: 12px;
+}
 
+.header {
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 32px;
+  color: white;
+}
 .field{
   width: 300px;
   padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .colour-border{
   border: 3px solid navy;
   padding: 10px;
   border-radius: 10px;
-  text-align: left;
 }
 
 .header{
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 body{
   padding: 10px;
-  background-color: paleturquoise;
-}
-
-.hostname{
-  margin-top: 8px;
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
+  background-color: rgb(28, 17, 146);
 }
