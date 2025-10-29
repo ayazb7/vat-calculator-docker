@@ -10,6 +10,7 @@ function App() {
   const [grossPrice, setGrossPrice] = useState(0.0);
   const [vatToPay, setVatToPay] = useState(0.0);
   const [vatRate, setVatRate] = useState(20.0);
+  const hostname = window.location.hostname;
 
   const handleNetPriceChange = (price) => {
     const gross_price = (price * ((vatRate / 100) + 1)).toFixed(2);
@@ -35,13 +36,18 @@ function App() {
   };
 
   return (
-    <div className='header field'>
-      VAT CALCULATOR
+    <div className='field'>
+      <div className='header'>
+        VAT CALCULATOR
+      </div>
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
         <PriceEntryField customstyle="field" label="Price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
         <DisplayBlock customstyle="field" label="VAT to pay: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="Price incl VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
+      </div>
+      <div className='hostname'>
+        Hostname {hostname}
       </div>
     </div>
   );
